@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Силантьев](https://up.htmlacademy.ru/adaptive/31/user/2473593).
-* Наставник: `Антон Варнавский`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
