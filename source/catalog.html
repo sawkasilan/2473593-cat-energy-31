@@ -50,7 +50,7 @@
                 <p class="catalog__info-text">700 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -69,7 +69,7 @@
                 <p class="catalog__info-text">1000 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -88,7 +88,7 @@
                 <p class="catalog__info-text">700 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -107,7 +107,7 @@
                 <p class="catalog__info-text">1000 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -126,7 +126,7 @@
                 <p class="catalog__info-text">400 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -145,7 +145,7 @@
                 <p class="catalog__info-text">700 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
           <li class="catalog__item">
             <div class="catalog__image">
@@ -164,16 +164,124 @@
                 <p class="catalog__info-text">500 ₽</p>
               </div>
             </div>
-            <button class="catalog__button" type="submit">Заказать</button>
+            <button class="catalog__button button" type="submit">Заказать</button>
           </li>
         </ul>
         <div class="catalog__more-product more-product">
           <p class="more-product__title">Показать еще 100500 товаров</p>
           <p class="more-product__info">На самом деле вкусов гораздо больше!</p>
-          <button class="more-product__button" type="button">Показать ещё</button>
+          <button class="more-product__button more-button" type="button">Показать ещё</button>
         </div>
       </div>
     </section>
+    <section class="add-product">
+      <h2 class="add-product__title">Дополнительные товары</h2>
+      <ul class="add-product__list">
+        <li class="add-product__item add-components">
+          <h3 class="add-components__title">сахарозаменитель</h3>
+          <div class="add-components__wrapper-info">
+            <p class="add-components__info">1 упаковка(100г)</p>
+            <p class="add-components__info">200 ₽</p>
+          </div>
+          <button class="add-components__button button" type="submit">Заказать</button>
+        </li>
+        <li class="add-product__item add-components">
+          <h3 class="add-components__title">питьевая вода</h3>
+          <div class="add-components__wrapper-info">
+            <p class="add-components__info">5 литров</p>
+            <p class="add-components__info">50 ₽</p>
+          </div>
+          <button class="add-components__button button" type="submit">Заказать</button>
+        </li>
+        <li class="add-product__item add-components">
+          <h3 class="add-components__title">молоко</h3>
+          <div class="add-components__wrapper-info">
+            <p class="add-components__info">1 литр</p>
+            <p class="add-components__info">100 ₽</p>
+          </div>
+          <button class="add-components__button button" type="submit">Заказать</button>
+        </li>
+        <li class="add-product__item add-components">
+          <h3 class="add-components__title">витамины</h3>
+          <div class="add-components__wrapper-info">
+            <p class="add-components__info">1 упаковка(30г)</p>
+            <p class="add-components__info">300 ₽</p>
+          </div>
+          <button class="add-components__button button" type="submit">Заказать</button>
+        </li>
+      </ul>
+      <div class="add-product__surprise">
+        <div class="add-product__surprise-icon">
+          <span class="visually-hidden">Иконка подарка</span>
+        </div>
+        <p class="add-product__surprise-info">Закажите все <br>
+          и получите чехол для <br>
+          кота в подарок!</p>
+      </div>
+    </section>
+    <section class="promotions">
+      <h2 class="visually-hidden">Подписка на уведомления</h2>
+      <div class="promotions__wrapper">
+        <h3 class="promotions__title">Акции и новинки</h3>
+        <p class="promotions__info">Подпишитесь на наши новости и не <br> пропустите ни одного предложения!</p>
+        <form class="promotions__form subscribe" action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+            <span class="visually-hidden">E-mail</span>
+            <input class="subscribe__input" name="subscribe-input" type="email" required placeholder="kuklachev@gmail.com">
+          </label>
+        </form>
+        <button class="promotions__button button" type="submit">Подписаться</button>
+      </div>
+    </section>
+    <section class="address">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="address__container address-container">
+        <h3 class="address__title">приглашаем <br>
+          к сотрудничеству <br>
+          дилеров!</h3>
+        <address class="address__text">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+      </div>
+      <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713003276122!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="address__icon">
+        <span class="visually-hidden">Иконка на карте</span>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main__footer-container footer-container">
+        <div class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="#" width="101" height="18" alt="Логотип сайта">
+        </div>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <span class="visually-hidden">Иконка ВК</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <span class="visually-hidden">Иконка Ютуб</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <span class="visually-hidden">Иконка Телеграмм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__logo-htmlacademy">
+          <a class="main-footer__logo-text-link" href="#">
+            <p class="main-footer__logo-text">HTML Academy</p>
+          </a>
+          <a class="main-footer__logo-icon-link" href="#">
+            <span class="visually-hidden">Иконка HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
 
 </body>
