@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/150.png"><!-- 150×150 -->
@@ -15,10 +15,14 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" width="33" height="38" alt="Логотип сайта">
+      <picture>
+        <source width="70" height="59" media="(min-width: 1440px)" type="images/svg+xml" srcset="images/header-image/logo-desktop@2x.svg">
+        <source width="60" height="50" type="images/svg+xml" media="(min-width: 768px)" srcset="images/header-image/logo-tablet@2x.svg">
+        <img src="images/header-image/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
+      </picture>
     </a>
     <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" width="101" height="18" alt="Логотип сайта">
+      <img src="images/header-image/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
     </a>
     <nav class="nav">
       <button class="nav-toggle nav-toggle--open" type="button">
@@ -225,35 +229,35 @@
           </ul>
           <button class="catalog__button button" type="button">Заказать</button>
         </li>
-        <li class="catalog__item more-product">
-          <p class="more-product__title">Показать еще 100500 товаров</p>
-          <p class="more-product__info">На самом деле вкусов гораздо больше!</p>
-          <button class="more-product__button button" type="button">Показать ещё</button>
+        <li class="catalog__item">
+          <h3 class="catalog__title-info">Показать еще 100500 товаров</h3>
+          <p class="catalog__info-text">На самом деле вкусов гораздо больше!</p>
+          <button class="catalog__button-more button" type="button">Показать ещё</button>
         </li>
       </ul>
     </section>
     <section class="add-product">
       <h2 class="add-product__title">Дополнительные товары</h2>
-      <ul class="add-product__list">
-        <li class="add-product__item add-components">
+      <ul class="add-product__list add-components">
+        <li class="add-components__item">
           <h3 class="add-components__title">сахарозаменитель</h3>
           <p class="add-components__info">1 упаковка(100г)</p>
           <p class="add-components__info">200 ₽</p>
           <button class="add-components__button button" type="button">Заказать</button>
         </li>
-        <li class="add-product__item add-components">
+        <li class="add-components__item">
           <h3 class="add-components__title">питьевая вода</h3>
           <p class="add-components__info">5 литров</p>
           <p class="add-components__info">50 ₽</p>
           <button class="add-components__button button" type="button">Заказать</button>
         </li>
-        <li class="add-product__item add-components">
+        <li class="add-components__item">
           <h3 class="add-components__title">молоко</h3>
           <p class="add-components__info">1 литр</p>
           <p class="add-components__info">100 ₽</p>
           <button class="add-components__button button" type="button">Заказать</button>
         </li>
-        <li class="add-product__item add-components">
+        <li class="add-components__item">
           <h3 class="add-components__title">витамины</h3>
           <p class="add-components__info">1 упаковка(30г)</p>
           <p class="add-components__info">300 ₽</p>
