@@ -29,3 +29,17 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.example__slider-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+  mask-image: url("../../icons/stack.svg#icon-slider");
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}

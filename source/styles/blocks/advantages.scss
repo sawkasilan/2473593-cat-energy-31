@@ -1,3 +1,4 @@
+
 .advantages__info {
   display: block;
   background-color: #f2f2f2;
@@ -19,4 +20,41 @@
   font-size: 16px;
   line-height: 16px;
   color: $base-color-title;
+}
+
+.advantages__icon-cat {
+  background-image: url("../../icons/stack.svg#icon-cat");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-position: 8px -4px;
+}
+
+.advantages__icon-tiger {
+  background-image: url("../../icons/stack.svg#icon-tiger");
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  background-position: -8px 10px;
+}
+
+.advantages__icon-background {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $base-bg-color;
+  border-radius: 50%;
+}
+
+.advantages__link-icon {
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  display: block;
+  background-color: $base-color-title;
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 32px;
+  height: 10px;
 }

@@ -1,0 +1,16 @@
+.nav__toggle {
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#icon-toggle");
+  mask-repeat: no-repeat;
+  background-color: $base-color-title;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  opacity: 0.8;
+}
+
+.nav__toggle:active {
+  opacity: 0.6;
+}

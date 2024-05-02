@@ -5,3 +5,37 @@
   line-height: 40px;
   color: $base-color-title;
 }
+
+.functions__icon {
+  width: 60px;
+  height: 60px;
+  background-color: $base-bg-color;
+}
+
+.functions__icon--leaf {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.functions__icon--powder {
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.functions__icon--eat {
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.functions__icon--alarm {
+  background-image: url("../../icons/stack.svg#icon-alarm");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
