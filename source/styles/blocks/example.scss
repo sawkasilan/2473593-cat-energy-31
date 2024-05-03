@@ -36,22 +36,24 @@
 
 .example__slider-button {
   position: absolute;
-  top: 48%;
-  left: 32px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #666666;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #ffffff;
-  //mask-image: url("../../icons/stack.svg#icon-slider");
-  //mask-size: 24px 18px;
-  //mask-repeat: no-repeat;
-  //mask-position: center center;
+  // mask-image: url("../../icons/stack.svg#icon-slider");
 }
 
-.example__slider-band {
+.example__slider-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.example__slider-button::after {
+  content: "";
+  position: absolute;
   width: 4px;
   height: 256px;
   background-color: #666666;

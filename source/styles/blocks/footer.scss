@@ -31,9 +31,30 @@
   mask-position: center center;
 }
 
-.main-footer__logo-text-link {
+.footer__logo-text-link {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #444444;
+}
+
+.footer__logo-text-link:active {
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.footer__logo-icon-link {
+  mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-size: 27px 34px;
+  background-color: #666666;
+}
+
+.footer__logo-icon-link:hover {
+  background-color: #68b738;
+}
+
+.footer__logo-icon-link:active {
+  background-color: rgba(104, 183, 56, 0.3);
 }
