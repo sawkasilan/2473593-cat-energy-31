@@ -3,7 +3,7 @@
 }
 
 .example__slider {
-  position: relative;
+
 }
 
 .example__title {
@@ -35,28 +35,21 @@
 }
 
 .example__slider-button {
-  position: absolute;
-  // mask-image: url("../../icons/stack.svg#icon-slider");
-}
-
-.example__slider-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #666666;
-  cursor: pointer;
+  mask-image: url("../../icons/stack.svg#icon-slider");
+  background-color: #666666;
+  mask-size: 24px 18px;
   width: 40px;
   height: 40px;
+  mask-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
 }
 
 .example__slider-button::after {
   content: "";
-  position: absolute;
+  display: block;
   width: 4px;
   height: 256px;
   background-color: #666666;
-  border-radius: 2px;
-  margin-left: 50px;
 }
+
