@@ -5,6 +5,10 @@
   mask-repeat: no-repeat;
   background-color: $base-color-title;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__toggle:hover {
