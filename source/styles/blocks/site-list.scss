@@ -9,7 +9,6 @@
 
 .site-list__link {
   font-family: "Oswald", "Arial", sans-serif;
-
   color: $base-color-title;
   font-size: 20px;
   line-height: 20px;
@@ -19,6 +18,11 @@
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item:not(:last-child) {
     margin-right: 33px;
   }
 }
