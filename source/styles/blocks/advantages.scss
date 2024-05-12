@@ -1,6 +1,39 @@
+.advantages {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    flex-direction: unset;
+    gap: 80px;
+  }
+}
+
 .advantages__info {
   display: block;
   background-color: #f2f2f2;
+  width: 280px;
+  height: 266px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
 }
 
 .advantages__title {

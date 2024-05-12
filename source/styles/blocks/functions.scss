@@ -1,15 +1,70 @@
+.functions {
+  margin-bottom: 49px;
+}
+
+.functions__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    width: 633px;
+    justify-content: space-between;
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    width: 1224px;
+  }
+}
+
+.functions__item {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    height: 280px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+}
+
 .functions__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
+  margin-bottom: 40px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .functions__icon {
   width: 60px;
   height: 60px;
   background-color: $base-bg-color;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .functions__icon--leaf {
