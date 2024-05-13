@@ -4,7 +4,7 @@
 }
 
 .example__slider {
-  position: relative;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -57,38 +57,5 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.example__slider-button {
-  width: 4px;
-  height: 256px;
-  background-color: #666666;
-  cursor: pointer;
-  border: none;
-  border-radius: 2px;
-}
-
-.example__slider-button::before {
-  content: "";
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 2px solid #666666;
-  background-color: #ffffff;
-  transform: translate(-50%, 50%);
-  bottom: 110px;
-}
-
-.example__slider-button::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#icon-slider");
-  mask-size: 24px 18px;
-  mask-repeat: no-repeat;
-  background-color: #666666;
-  transform: translate(-50%, 50%);
 }
 

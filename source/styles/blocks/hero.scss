@@ -10,7 +10,6 @@
     min-height: 796px;
     align-items: start;
     justify-content: flex-start;
-    gap: 50px;
   }
 }
 
@@ -29,7 +28,8 @@
     min-height: 180px;
     align-items: start;
     padding-left: 120px;
-    background-color: #ffffff;
+    background-color: transparent;
+    gap: 40px;
   }
 }
 
@@ -40,6 +40,15 @@
 
   @media (min-width: $tablet-width) {
     z-index: -1;
+    top: 89%;
+    left: 53%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button .hero__program-button {
+    width: 244px;
+    height: 54px;
   }
 }
 

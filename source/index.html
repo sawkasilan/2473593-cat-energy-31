@@ -57,13 +57,11 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <arcticle class="advantages__info">
-        <div class="advantages__title-wrapper">
-          <div class="advantages__icon-background">
-            <div class="advantages__icon-cat"></div>
-            <span class="visually-hidden">Иконка кота</span>
-          </div>
-          <h3 class="advantages__title">похудение</h3>
+        <div class="advantages__icon-background">
+          <div class="advantages__icon-cat"></div>
+          <span class="visually-hidden">Иконка кота</span>
         </div>
+        <h3 class="advantages__title">похудение</h3>
         <p class="advantages__text index-text">Ваш кот весит больше собаки и почти утратил способность <br>
           лазить по деревьям? Пора на диету! Cat Energy Slim поможет <br>
           вашему питомцу сбросить лишний вес.</p>
@@ -77,13 +75,11 @@
         </div>
       </arcticle>
       <arcticle class="advantages__info">
-        <div class="advantages__title-wrapper">
-          <div class="advantages__icon-background">
-            <div class="advantages__icon-tiger"></div>
-            <span class="visually-hidden">Иконка тигра</span>
-          </div>
-          <h3 class="advantages__title">набор массы</h3>
+        <div class="advantages__icon-background">
+          <div class="advantages__icon-tiger"></div>
+          <span class="visually-hidden">Иконка тигра</span>
         </div>
+        <h3 class="advantages__title">набор массы</h3>
         <p class="advantages__text index-text">Заработать авторитет среди дворовых котов и даже собак? <br>
           Серия Cat Energy Pro поможет вашему коту нарастить <br>
           необходимые мышцы!</p>
@@ -152,18 +148,25 @@
         </p>
       </div>
       <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      <div class="example__slider">
-        <picture>
-          <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thick-tablet@2x@1x.png 1x, images/example/cat-thick-tablet@2x@2x.png 2x">
-          <img class="example__slider-image example__slider-image--thick" width="280" height="256" src="images/example/cat-thick-mobile@2x@1x.png" srcset="images/example/cat-thick-mobile@2x@2x.png 2x" alt="Фото полного кота">
-        </picture>
-        <button class="example__slider-button" type="button">
+      <div class="example__slider slider">
+        <div class="slider__wrapper slider__wrapper-before">
+          <picture>
+            <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thick-tablet@2x@1x.png 1x, images/example/cat-thick-tablet@2x@2x.png 2x">
+            <img class="slider__image" width="280" height="256" src="images/example/cat-thick-mobile@2x@1x.png" srcset="images/example/cat-thick-mobile@2x@2x.png 2x" alt="Фото полного кота">
+          </picture>
+        </div>
+        <div class="slider__wrapper slider__wrapper-after">
+          <picture>
+            <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thin-tablet@2x@1x.png 1x, images/example/cat-thin-tablet@2x@2x.png 2x">
+            <img class="slider__image" width="280" height="256" src="images/example/cat-thin-mobile@2x@1x.png" srcset="images/example/cat-thin-mobile@2x@2x.png 2x" alt="Фото худого кота">
+          </picture>
+        </div>
+        <button class="slider__button" type="button">
           <span class="visually-hidden">Иконка слайдера</span>
+          <svg class="slider__icon" width="40" height="40">
+            <use href="icons/stack.svg#thumb"></use>
+          </svg>
         </button>
-        <picture>
-          <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thin-tablet@2x@1x.png 1x, images/example/cat-thin-tablet@2x@2x.png 2x">
-          <img class="example__slider-image example__slider-image--thin" width="280" height="256" src="images/example/cat-thin-mobile@2x@1x.png" srcset="images/example/cat-thin-mobile@2x@2x.png 2x" alt="Фото худого кота">
-        </picture>
       </div>
     </section>
     <section class="address">
