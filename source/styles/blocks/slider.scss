@@ -6,18 +6,12 @@
   display: flex;
 }
 
-.slider__wrapper {
-  overflow: hidden;
-}
-
 .slider__wrapper-before {
-  width: 50%;
+
 }
 
 .slider__wrapper-after {
-  justify-content: end;
-  width: 50%;
-  display: flex;
+  position: absolute;
 }
 
 .slider__icon {

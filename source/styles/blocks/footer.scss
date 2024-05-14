@@ -1,3 +1,52 @@
+.footer {
+  position: relative;
+  width: 320px;
+  min-height: 240px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footer__social-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 62px;
+  gap: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border-top: 1px solid #d9d9d9;
+    top: 83px;
+  }
+}
+
+.footer__logo-htmlacademy {
+  width: 280px;
+  min-height: 34px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border-top: 1px solid #d9d9d9;
+    bottom: 93px;
+  }
+}
+
 .footer__social-link--vk {
   display: block;
   width: 28px;
