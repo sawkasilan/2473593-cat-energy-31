@@ -27,6 +27,7 @@
     justify-content: space-between;
     gap: 37px;
     margin-bottom: 47px;
+    counter-reset: number 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,11 +44,27 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 249px;
     height: 280px;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    counter-increment: number;
+
+    &::before {
+      content: counter(number);
+      font-family: "Oswald", "Arial", sans-serif;
+      position: absolute;
+      width: 136px;
+      height: 280px;
+      font-size: 280px;
+      line-height: 280px;
+      z-index: -2;
+      right: -5px;
+      top: 15px;
+      color: #f2f2f2;
+    }
   }
 }
 
