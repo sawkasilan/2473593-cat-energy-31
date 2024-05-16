@@ -4,6 +4,21 @@
   width: 280px;
   height: 256px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 462px;
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    margin-top: -156px;
+  }
 }
 
 .slider__wrapper-before {
@@ -36,4 +51,10 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+
+  @media (min-width: $tablet-width) {
+    margin-top: -156px;
+    height: 110%;
+  }
 }
+

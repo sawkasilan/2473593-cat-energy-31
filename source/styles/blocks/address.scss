@@ -8,6 +8,12 @@
 .address__map {
   width: 320px;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    margin: 0 auto;
+  }
 }
 
 .address__container {
@@ -15,6 +21,14 @@
   min-height: 112px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
 }
 
 .address__title {
@@ -25,10 +39,27 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__text {
   font-size: 14px;
   line-height: 20px;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 157px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address__city {
+    padding-top: 20px;
+  }
 }
