@@ -29,5 +29,17 @@
     width: 174px;
     height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo-text > img {
+    width: 118px;
+    height: 21px;
+  }
 }
 
