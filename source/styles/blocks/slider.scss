@@ -10,6 +10,15 @@
     height: 462px;
     background-color: #eaeaea;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: transparent;
+    bottom: -36px;
+    width: 560px;
+    height: 512px;
+    left: 880px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -55,6 +64,10 @@
   @media (min-width: $tablet-width) {
     margin-top: -156px;
     height: 110%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
   }
 }
 

@@ -19,9 +19,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: unset;
-    gap: 80px;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 71px;
   }
 }
 
@@ -57,14 +59,24 @@
     grid-column: 1 / 2;
     grid-row: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 2;
+  }
 }
 
 .advantages__text {
   grid-column: 1 / 3;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    width: 457px;
   }
 }
 
@@ -95,6 +107,13 @@
     width: 200px;
     height: 211px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+    grid-column: 1 / 2;
+  }
 }
 
 .advantages__icon-tiger {
@@ -108,6 +127,12 @@
     background-size: 268px 200px;
     width: 268px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+    width: 134px;
+    height: 100px;
   }
 }
 
@@ -139,6 +164,15 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 36px 155px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 162px 2fr;
+    grid-template-rows: 100px 1fr;
+    min-width: 457px;
+    gap: 39px 0;
+    padding-top: 41px;
+    margin-left: 52px;
+  }
 }
 
 .advantages__link-wrapper {
@@ -147,4 +181,9 @@
   align-items: center;
   padding-top: 38px;
   padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    padding-top: 23px;
+  }
 }
