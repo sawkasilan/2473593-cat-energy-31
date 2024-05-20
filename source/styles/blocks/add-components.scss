@@ -1,3 +1,7 @@
+.add-components {
+  list-style-type: none;
+}
+
 .add-components__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -5,9 +9,43 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  grid-column: 1 / -1;
 }
 
 .add-components__info {
   font-size: 14px;
   line-height: 14px;
+}
+
+.add-components__price {
+  text-align: right;
+}
+
+.add-components__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  width: 280px;
+  padding-bottom: 19px;
+  padding-top: 13px;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 26px 38px 28px;
+  }
+}
+
+.add-components__item:last-child {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.add-components__button {
+  margin-top: 2px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
 }
