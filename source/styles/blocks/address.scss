@@ -33,7 +33,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
     min-height: 200px;
     justify-content: space-between;
     margin: 0 auto;
@@ -83,8 +83,4 @@
   .address__city {
     padding-top: 20px;
   }
-}
-
-.address__catalog--color {
-  background-color: #f2f2f2;
 }

@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .add-product__title {
@@ -20,6 +24,10 @@
     line-height: 32px;
     padding-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .add-product__surprise {
@@ -32,6 +40,25 @@
   gap: 48px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 706px;
+    min-height: 200px;
+    flex-direction: row;
+    padding: 0 125px 0 77px;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 288px;
+    flex-direction: column;
+    gap: 46px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .add-product__surprise-info {
@@ -39,6 +66,16 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    min-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .add-product__surprise-icon {
@@ -48,4 +85,15 @@
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add__product-wrapper {
+    display: flex;
+    gap: 81px;
+  }
 }

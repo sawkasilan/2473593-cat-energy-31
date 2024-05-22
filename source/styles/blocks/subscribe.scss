@@ -10,4 +10,16 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    min-height: 56px;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    min-height: 56px;
+    margin: 0;
+  }
 }
