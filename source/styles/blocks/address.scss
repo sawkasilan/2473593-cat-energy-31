@@ -1,3 +1,4 @@
+
 .address {
   width: 320px;
   display: flex;
@@ -51,7 +52,6 @@
   }
 }
 
-
 .address__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -65,6 +65,7 @@
     font-size: 20px;
     line-height: 26px;
   }
+
 }
 
 .address__text {
@@ -83,4 +84,5 @@
   .address__city {
     padding-top: 20px;
   }
+
 }

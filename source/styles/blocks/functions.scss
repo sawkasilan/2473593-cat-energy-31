@@ -1,3 +1,4 @@
+
 .functions {
   width: 280px;
   margin: 0 auto;
@@ -68,6 +69,7 @@
   }
 }
 
+
 .functions__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -83,6 +85,7 @@
     padding: 0;
     margin-bottom: 32px;
   }
+
 }
 
 .functions__icon {
@@ -90,10 +93,12 @@
   height: 60px;
   background-color: $base-bg-color;
 
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
   }
+
 }
 
 .functions__icon--leaf {
@@ -123,3 +128,4 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+

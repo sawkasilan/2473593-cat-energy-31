@@ -1,3 +1,4 @@
+
 @media (min-width: $tablet-width) {
   br {
     display: none;
@@ -27,6 +28,7 @@
   }
 }
 
+
 .advantages__info {
   display: block;
   background-color: #f2f2f2;
@@ -42,6 +44,7 @@
     width: 570px;
     height: 374px;
   }
+
 }
 
 .advantages__title {
@@ -51,6 +54,7 @@
   line-height: 27px;
   color: $base-color-title;
   text-transform: uppercase;
+
   align-self: center;
 
   @media (min-width: $tablet-width) {
@@ -78,6 +82,7 @@
     grid-column: 1 / -1;
     width: 457px;
   }
+
 }
 
 .advantages__link-text {
@@ -114,6 +119,17 @@
     background-size: 100px 106px;
     grid-column: 1 / 2;
   }
+
+}
+
+
+.advantages__icon-cat {
+  background-image: url("../../icons/stack.svg#icon-cat");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-position: 8px -4px;
 }
 
 .advantages__icon-tiger {
@@ -146,6 +162,7 @@
   width: 32px;
   height: 10px;
 }
+
 
 .advantages__wrapper {
   display: grid;
@@ -192,3 +209,4 @@
     padding-top: 23px;
   }
 }
+

@@ -1,3 +1,4 @@
+
 .catalog {
   width: 280px;
   margin: 27px auto 0;
@@ -105,11 +106,12 @@
 }
 
 .catalog__title-info-link {
-  text-decoration: none;
+ text-decoration: none;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / -4;
   }
+
 }
 
 .catalog__title-info {
@@ -119,6 +121,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -131,6 +134,7 @@
 .catalog__info-text {
   font-size: 12px;
   line-height: 16px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -150,6 +154,7 @@
   @media (min-width: $desktop-width) {
     width: 169px;
   }
+
 }
 
 .catalog__button-more {
