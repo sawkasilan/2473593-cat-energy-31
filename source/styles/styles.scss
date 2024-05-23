@@ -6,22 +6,24 @@
 @import "./common/visually-hidden";
 
 /* BLOCKS */
+
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
-@import "./blocks/button.scss";
 @import "./blocks/index-text.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/functions.scss";
 @import "./blocks/example.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/main-footer.scss";
 @import "./blocks/main-inner.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/item-more";
 @import "./blocks/add-product.scss";
 @import "./blocks/add-components.scss";
 @import "./blocks/promotions.scss";

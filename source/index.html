@@ -15,17 +15,19 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <picture>
-        <source width="70" height="59" media="(min-width: 1440px)" type="images/svg+xml" srcset="images/header/logo-desktop@2x.svg">
-        <source width="60" height="50" type="images/svg+xml" media="(min-width: 768px)" srcset="images/header/logo-tablet@2x.svg">
-        <img src="images/header/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
-    <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="images/header/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
-    </a>
-    <nav class="nav">
+    <div class="main-header__logo-wrapper">
+      <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <picture>
+          <source width="70" height="59" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/header/logo-desktop.svg">
+          <source width="60" height="50" media="(min-width: 768px)" type="image/svg+xml" srcset="images/header/logo-tablet.svg">
+          <img src="images/header/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
+        </picture>
+      </a>
+      <a class="main-header__logo-text" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="images/header/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
+      </a>
+    </div>
+    <nav class="nav nav__background-desktop">
       <button class="nav__toggle nav__toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -39,8 +41,7 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__container">
-        <h1 class="hero__title">Функциональное <br>
-          питание для котов</h1>
+        <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__text">
           Занялся собой? Займись котом!
         </p>
@@ -55,16 +56,15 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <arcticle class="advantages__info">
-        <div class="advantages__title-wrapper">
-          <div class="advantages__icon-background">
-            <div class="advantages__icon-cat"></div>
+        <div class="advantages__wrapper">
+          <div class="advantages__icon-cat">
             <span class="visually-hidden">Иконка кота</span>
           </div>
           <h3 class="advantages__title">похудение</h3>
+          <p class="advantages__text index-text">Ваш кот весит больше собаки и почти утратил способность <br>
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет <br>
+            вашему питомцу сбросить лишний вес.</p>
         </div>
-        <p class="advantages__text index-text">Ваш кот весит больше собаки и почти утратил способность <br>
-          лазить по деревьям? Пора на диету! Cat Energy Slim поможет <br>
-          вашему питомцу сбросить лишний вес.</p>
         <div class="advantages__link-wrapper">
           <a class="advantages__link-text" href="#">
             Каталог slim
@@ -75,16 +75,15 @@
         </div>
       </arcticle>
       <arcticle class="advantages__info">
-        <div class="advantages__title-wrapper">
-          <div class="advantages__icon-background">
-            <div class="advantages__icon-tiger"></div>
+        <div class="advantages__wrapper">
+          <div class="advantages__icon-tiger">
             <span class="visually-hidden">Иконка тигра</span>
           </div>
           <h3 class="advantages__title">набор массы</h3>
+          <p class="advantages__text index-text">Заработать авторитет среди дворовых котов и даже собак? <br>
+            Серия Cat Energy Pro поможет вашему коту нарастить <br>
+            необходимые мышцы!</p>
         </div>
-        <p class="advantages__text index-text">Заработать авторитет среди дворовых котов и даже собак? <br>
-          Серия Cat Energy Pro поможет вашему коту нарастить <br>
-          необходимые мышцы!</p>
         <div class="advantages__link-wrapper">
           <a class="advantages__link-text" href="#">
             Каталог pro
@@ -132,36 +131,47 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__text index-text">Борис сбросил 5 кг за 2 месяца, просто <br>
-        заменив свой обычный корм на Cat Energy <br>
-        Slim. Отличный результат без изнуряющих <br>
-        тренировок! При этом он не менял своих <br>
-        привычек и по-прежнему спит по 16 часов <br>
-        в день.
-      </p>
-      <div class="example__results-wrapper">
-        <p class="exapmle__results-text">
-          <span class="example__results-number">5 кг</span>
-          снижение<br>веса
+      <div class="example__background-desktop">
+        <p class="example__text index-text">Борис сбросил 5 кг за 2 месяца, просто <br>
+          заменив свой обычный корм на Cat Energy <br>
+          Slim. Отличный результат без изнуряющих <br>
+          тренировок! При этом он не менял своих <br>
+          привычек и по-прежнему спит по 16 часов <br>
+          в день.
         </p>
-        <p class="exapmle__results-text">
-          <span class="example__results-number">60 дней</span>
-          затрачено<br>времени
-        </p>
-      </div>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      <div class="example__slider">
-        <picture>
-          <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thick-tablet@2x@1x.png 1x, images/example/cat-thick-tablet@2x@2x.png 2x">
-          <img class="example__slider-image example__slider-image--thick" width="280" height="256" src="images/example/cat-thick-mobile@2x@1x.png" srcset="images/example/cat-thick-mobile@2x@2x.png 2x" alt="Фото полного кота">
-        </picture>
-        <button class="example__slider-button" type="button">
-          <span class="visually-hidden">Иконка слайдера</span>
-        </button>
-        <picture>
-          <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thin-tablet@2x@1x.png 1x, images/example/cat-thin-tablet@2x@2x.png 2x">
-          <img class="example__slider-image example__slider-image--thin" width="280" height="256" src="images/example/cat-thin-mobile@2x@1x.png" srcset="images/example/cat-thin-mobile@2x@2x.png 2x" alt="Фото худого кота">
-        </picture>
+        <div class="example__text-tablet-wrapper">
+          <div class="example__results-wrapper">
+            <p class="exapmle__results-text">
+              <span class="example__results-number">5 кг</span>
+              снижение <br>веса
+            </p>
+            <p class="exapmle__results-text">
+              <span class="example__results-number">60 дней</span>
+              затрачено <br>времени
+            </p>
+          </div>
+          <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
+        </div>
+        <div class="example__slider slider">
+          <div class="slider__wrapper slider__wrapper-before">
+            <picture>
+              <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thick-tablet@2x@1x.png 1x, images/example/cat-thick-tablet@2x@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/example/cat-thick-mobile@2x@1x.png" srcset="images/example/cat-thick-mobile@2x@2x.png 2x" alt="Фото полного кота">
+            </picture>
+          </div>
+          <div class="slider__wrapper slider__wrapper-after">
+            <picture>
+              <source width="560" height="512" media="(min-width: 768px)" type="image/png" srcset="images/example/cat-thin-tablet@2x@1x.png 1x, images/example/cat-thin-tablet@2x@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/example/cat-thin-mobile@2x@1x.png" srcset="images/example/cat-thin-mobile@2x@2x.png 2x" alt="Фото худого кота">
+            </picture>
+          </div>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Иконка слайдера</span>
+            <svg class="slider__icon" width="40" height="40">
+              <use href="icons/stack.svg#thumb"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
     <section class="address">
@@ -173,17 +183,17 @@
         <address class="address__text">
           <p class="address__street">ул. Большая
             Конюшенная, д. 19/8</p>
-          <p class="adress__city">Санкт-Петербург</p>
+          <p class="address__city">Санкт-Петербург</p>
         </address>
       </div>
       <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713003276122!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="address__image">
-        <picture>
+      <!-- <div class="address__image">
+         <picture>
           <source width="113" height="106" media="(min-width: 768px)" type="image/png" srcset="images/map/map-marker-tablet.png@1x.png 1x, images/map/map-marker-mobile.png@2x.png 2x">
           <img class="address__map-marker" width="57" height="53" src="images/map/map-marker-mobile.png@1x.png" srcset="images/map/map-marker-mobile.png@2x.png 2x" alt="Маркер на карте">
         </picture>
         <span class="visually-hidden">Иконка на карте</span>
-      </div>
+      </div> -->
     </section>
     <footer class="footer">
       <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">

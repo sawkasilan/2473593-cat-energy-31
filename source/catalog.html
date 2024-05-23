@@ -14,34 +14,26 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <picture>
-        <source width="70" height="59" media="(min-width: 1440px)" type="images/svg+xml" srcset="images/header/logo-desktop@2x.svg">
-        <source width="60" height="50" type="images/svg+xml" media="(min-width: 768px)" srcset="images/header/logo-tablet@2x.svg">
-        <img src="images/header/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
-    <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="images/header/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
-    </a>
+    <div class="main-header__logo-wrapper">
+      <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <picture>
+          <source width="70" height="59" media="(min-width: 1440px)" type="image/svg+xml" srcset="images/header/logo-desktop.svg">
+          <source width="60" height="50" media="(min-width: 768px)" type="image/svg+xml" srcset="images/header/logo-tablet.svg">
+          <img src="images/header/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
+        </picture>
+      </a>
+      <a class="main-header__logo-text" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="images/header/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
+      </a>
+    </div>
     <nav class="nav">
       <button class="nav__toggle nav__toggle--open" type="button">
-        <source width="70" height="59" media="(min-width: 1440px)" type="images/svg+xml" srcset="images/header-image/logo-desktop@2x.svg">
-        <source width="60" height="50" type="images/svg+xml" media="(min-width: 768px)" srcset="images/header-image/logo-tablet@2x.svg">
-        <img src="images/header-image/logo-mobile@2x.svg" width="33" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
-    <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="images/header-image/logo-text@2x.svg" width="101" height="18" alt="Логотип сайта">
-    </a>
-    <nav class="nav">
-      <button class="nav-toggle nav-toggle--open" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-        <li class="site-list__item site-list__item--current"><a class="site-list__link" href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="#">Подбор программы</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--color-desktop" href="index.html">Главная</a></li>
+        <li class="site-list__item site-list__item--current"><a class="site-list__link site-list__link--color-desktop" href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a class="site-list__link site-list__link--color-desktop" href="#">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -53,8 +45,8 @@
         <li class="catalog__item">
           <a class="catalog__image-link" href="#">
             <picture>
-              <source width="169" height="210" media="(min-width: 1440px)" type="image/png" srcset="images/catalog/product-chicken500-desktop@2x@1x.png 1x, images/catalog-image/product-chicken500-desktop@2x@2x.png 2x">
-              <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/catalog/product-chicken500-tablet@2x@1x.png 1x, images/catalog-image/product-chicken500-tablet@2x@2x.png 2x">
+              <source width="169" height="210" media="(min-width: 1440px)" type="image/png" srcset="images/catalog/product-chicken500-desktop@2x@1x.png 1x, images/catalog/product-chicken500-desktop@2x@2x.png 2x">
+              <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/catalog/product-chicken500-tablet@2x@1x.png 1x, images/catalog/product-chicken500-tablet@2x@2x.png 2x">
               <img src="images/catalog/product-chicken500-mobile@2x@1x.png" srcset="images/catalog/product-chicken500-desktop@2x@2x.png 2x" width="140" height="107" alt="Cat Energy Pro 500г">
             </picture>
           </a>
@@ -239,55 +231,57 @@
           </ul>
           <button class="catalog__button button" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <h3 class="catalog__title-info">Показать еще 100500 товаров</h3>
-          <p class="catalog__info-text">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog__button-more button" type="button">Показать ещё</button>
+        <li class="catalog__item item-more">
+          <h3 class="catalog__title-info item-more__title">Показать еще 100500 товаров</h3>
+          <p class="catalog__info-text item-more__text">На самом деле вкусов гораздо больше!</p>
+          <button class="catalog__button item-more__button button" type="button">Показать ещё</button>
         </li>
       </ul>
     </section>
     <section class="add-product">
       <h2 class="add-product__title">Дополнительные товары</h2>
-      <ul class="add-product__list add-components">
-        <li class="add-components__item">
-          <h3 class="add-components__title">сахарозаменитель</h3>
-          <p class="add-components__info">1 упаковка(100г)</p>
-          <p class="add-components__info">200 ₽</p>
-          <button class="add-components__button button" type="button">Заказать</button>
-        </li>
-        <li class="add-components__item">
-          <h3 class="add-components__title">питьевая вода</h3>
-          <p class="add-components__info">5 литров</p>
-          <p class="add-components__info">50 ₽</p>
-          <button class="add-components__button button" type="button">Заказать</button>
-        </li>
-        <li class="add-components__item">
-          <h3 class="add-components__title">молоко</h3>
-          <p class="add-components__info">1 литр</p>
-          <p class="add-components__info">100 ₽</p>
-          <button class="add-components__button button" type="button">Заказать</button>
-        </li>
-        <li class="add-components__item">
-          <h3 class="add-components__title">витамины</h3>
-          <p class="add-components__info">1 упаковка(30г)</p>
-          <p class="add-components__info">300 ₽</p>
-          <button class="add-components__button button" type="button">Заказать</button>
-        </li>
-      </ul>
-      <div class="add-product__surprise">
-        <div class="add-product__surprise-icon">
-          <span class="visually-hidden">Иконка подарка</span>
+      <div class="add__product-wrapper">
+        <ul class="add-product__list add-components">
+          <li class="add-components__item">
+            <h3 class="add-components__title">сахарозаменитель</h3>
+            <p class="add-components__info">1 упаковка (100г)</p>
+            <p class="add-components__info add-components__price">200 ₽</p>
+            <button class="add-components__button button" type="button">Заказать</button>
+          </li>
+          <li class="add-components__item">
+            <h3 class="add-components__title">питьевая вода</h3>
+            <p class="add-components__info">5 литров</p>
+            <p class="add-components__info add-components__price">50 ₽</p>
+            <button class="add-components__button button" type="button">Заказать</button>
+          </li>
+          <li class="add-components__item">
+            <h3 class="add-components__title">молоко</h3>
+            <p class="add-components__info">1 литр</p>
+            <p class="add-components__info add-components__price">100 ₽</p>
+            <button class="add-components__button button" type="button">Заказать</button>
+          </li>
+          <li class="add-components__item">
+            <h3 class="add-components__title">витамины</h3>
+            <p class="add-components__info">1 упаковка (30г)</p>
+            <p class="add-components__info add-components__price">300 ₽</p>
+            <button class="add-components__button button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="add-product__surprise">
+          <div class="add-product__surprise-icon">
+            <span class="visually-hidden">Иконка подарка</span>
+          </div>
+          <p class="add-product__surprise-info">Закажите все <br>
+            и получите чехол для <br>
+            кота в подарок!</p>
         </div>
-        <p class="add-product__surprise-info">Закажите все <br>
-          и получите чехол для <br>
-          кота в подарок!</p>
       </div>
     </section>
     <section class="promotions">
       <h2 class="visually-hidden">Подписка на уведомления</h2>
+      <h3 class="promotions__title">Акции и новинки</h3>
+      <p class="promotions__info">Подпишитесь на наши новости и не <br> пропустите ни одного предложения!</p>
       <div class="promotions__wrapper">
-        <h3 class="promotions__title">Акции и новинки</h3>
-        <p class="promotions__info">Подпишитесь на наши новости и не <br> пропустите ни одного предложения!</p>
         <form class="promotions__form subscribe" action="https://echo.htmlacademy.ru/" method="post">
           <label>
             <span class="visually-hidden">E-mail</span>
@@ -299,14 +293,14 @@
     </section>
     <section class="address">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="address__container address-container">
+      <div class="address__container">
         <h3 class="address__title">приглашаем <br>
           к сотрудничеству <br>
           дилеров!</h3>
         <address class="address__text">
           <p class="address__street">ул. Большая
             Конюшенная, д. 19/8</p>
-          <p class="adress__city">Санкт-Петербург</p>
+          <p class="address__city">Санкт-Петербург</p>
         </address>
       </div>
       <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713003276122!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -345,7 +339,6 @@
       </div>
     </footer>
   </main>
-
 </body>
 
 </html>

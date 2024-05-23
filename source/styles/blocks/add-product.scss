@@ -1,19 +1,86 @@
+
+.add-product {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .add-product__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: $base-color-title;
   font-size: 24px;
   line-height: 24px;
+
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+
 }
 
 .add-product__surprise {
   background-color: rgba(104, 183, 56, 0.85);
+  margin-top: 35px;
+  width: 280px;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 706px;
+    min-height: 200px;
+    flex-direction: row;
+    padding: 0 125px 0 77px;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 288px;
+    flex-direction: column;
+    gap: 46px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .add-product__surprise-info {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    min-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+
 }
 
 .add-product__surprise-icon {
@@ -23,4 +90,16 @@
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add__product-wrapper {
+    display: flex;
+    gap: 81px;
+  }
+
 }
