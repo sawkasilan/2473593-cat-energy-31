@@ -48,3 +48,54 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    width: 64px;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 42px;
+    left: 2px;
+    width: 67px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item--current-catalog::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 97px;
+    width: 154px;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--current-catalog::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 104px;
+    width: 171px;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
+
