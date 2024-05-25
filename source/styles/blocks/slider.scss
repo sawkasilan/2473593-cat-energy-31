@@ -21,6 +21,10 @@
   }
 }
 
+.slider__wrapper {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .slider__wrapper {
     width: 560px;
@@ -31,7 +35,7 @@
 }
 
 .slider__wrapper-before {
-
+  position: absolute;
 }
 
 .slider__wrapper-after {

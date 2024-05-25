@@ -1,9 +1,21 @@
 
-.site-list {
-  display: none;
+.site-list--open {
+  display: block;
   list-style-type: none;
-  position: relative;
+  position: absolute;
+  z-index: 5;
+  width: 322px;
+  background-color: #ffffff;
+  right: -22px;
+  top: 45px;
+  height: 198px;
+}
 
+.site-list--close {
+  display: none;
+}
+
+.site-list {
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -16,12 +28,27 @@
   }
 }
 
+.site-list__item {
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    height: 66px;
+    text-align: center;
+    padding-top: 22px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $tablet-width) {
+    list-style-type: none;
+  }
+}
+
+
 .site-list__link {
   font-family: "Oswald", "Arial", sans-serif;
   color: $base-color-title;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

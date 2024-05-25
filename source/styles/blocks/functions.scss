@@ -27,14 +27,17 @@
     width: 633px;
     justify-content: space-between;
     gap: 37px;
-    margin-bottom: 47px;
+    padding-bottom: 47px;
+    margin-bottom: 45px;
     counter-reset: number 0;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     width: 1224px;
     margin-bottom: 69px;
+    border: none;
   }
 }
 
