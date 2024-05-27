@@ -20,23 +20,37 @@
   flex-direction: column;
   align-items: center;
   gap: 23px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     gap: 50px;
   }
 }
 
-.item-more__title::before {
+.item-more__title::after {
   content: "";
-  background-image: url("../../icons/stack.svg#plus");
-  display: block;
+  position: absolute;
+  top: 25px;
   width: 30px;
-  height: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
 
   @media (min-width: $tablet-width) {
-    content: "";
     width: 60px;
-    height: 60px;
+  }
+}
+
+.item-more__title::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  transform: rotate(90deg);
+  margin-bottom: 23px;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
   }
 }
 
