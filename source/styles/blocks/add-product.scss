@@ -2,6 +2,22 @@
 .add-product {
   width: 280px;
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 12px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 12px;
+      right: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -18,17 +34,23 @@
   color: $base-color-title;
   font-size: 24px;
   line-height: 24px;
-
   margin-bottom: 36px;
+  width: 226px;
+  box-shadow: 40px 0 0 0 #ffffff;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     padding-left: 40px;
+    width: 345px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
+    width: 418px;
   }
 }
 

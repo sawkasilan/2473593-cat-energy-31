@@ -148,6 +148,15 @@
   mask-position: center;
   width: 32px;
   height: 10px;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:hover {
+    mask-size: 32px 10px;
+    height: 12px;
+  }
 }
 
 
@@ -188,6 +197,10 @@
   padding-top: 15px;
   border-top: 1px solid #d9d9d9;
   width: 240px;
+
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 0 0 52px;

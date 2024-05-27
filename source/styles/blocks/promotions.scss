@@ -1,8 +1,28 @@
 
 .promotions {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 53px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 94px;
+      right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 117px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -21,22 +41,26 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-
+  width: 152px;
   padding-top: 40px;
   padding-bottom: 32px;
+  background-color: #ffffff;
+  box-shadow: 40px 0 0 0 #ffffff;
+
 
   @media (min-width: $tablet-width) {
     padding: 80px 0 66px 70px;
     font-size: 32px;
     line-height: 32px;
+    width: 275px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 96px 0 72px 110px;
     font-size: 40px;
     line-height: 40px;
+    width: 365px;
   }
-
 }
 
 .promotions__info {
@@ -67,15 +91,14 @@
     display: flex;
     justify-content: center;
   }
-
 }
 
 .promotions__button {
   height: 56px;
-
+  font-size: 20px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
   }
-
 }
