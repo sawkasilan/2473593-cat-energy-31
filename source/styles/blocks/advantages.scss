@@ -143,19 +143,13 @@
   mask-image: url("../../icons/stack.svg#icon-arrow");
   display: block;
   background-color: $base-color-title;
-  mask-size: 24px 12px;
   mask-repeat: no-repeat;
   mask-position: center;
-  width: 32px;
-  height: 10px;
-
-  &:active {
-    opacity: 0.8;
-  }
+  width: 24px;
+  height: 12px;
 
   &:hover {
-    mask-size: 32px 10px;
-    height: 12px;
+    width: 32px;
   }
 }
 
@@ -168,6 +162,10 @@
   width: 227px;
   padding-top: 23px;
   margin-left: 20px;
+
+  &:active {
+    opacity: 0.8;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;

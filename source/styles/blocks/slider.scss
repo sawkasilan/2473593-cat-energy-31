@@ -4,6 +4,7 @@
   width: 280px;
   height: 256px;
   display: flex;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -22,7 +23,8 @@
 }
 
 .slider__wrapper {
-  overflow: hidden;
+  width: 280px;
+  height: 256px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,11 +37,21 @@
 }
 
 .slider__wrapper-before {
+  clip-path: xywh(0% 0 50% 100%);
+  display: block;
   position: absolute;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%);
 }
 
 .slider__wrapper-after {
+  clip-path: xywh(50% 0 50% 100%);
+  display: block;
   position: absolute;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%);
 }
 
 .slider__icon {
