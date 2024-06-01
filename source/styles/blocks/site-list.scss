@@ -1,20 +1,4 @@
 
-.site-list--open {
-  display: block;
-  list-style-type: none;
-  position: absolute;
-  z-index: 5;
-  width: 322px;
-  background-color: #ffffff;
-  right: -22px;
-  top: 45px;
-  height: 198px;
-}
-
-.site-list--close {
-  display: none;
-}
-
 .site-list {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -29,7 +13,7 @@
 }
 
 .site-list__item {
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     height: 66px;
     text-align: center;
     padding-top: 22px;
