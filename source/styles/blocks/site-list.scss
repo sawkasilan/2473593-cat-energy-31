@@ -1,6 +1,5 @@
 
 .site-list {
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -73,7 +72,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 35px;
+    top: 33px;
     width: 64px;
     height: 2px;
     background-color: #68b738;

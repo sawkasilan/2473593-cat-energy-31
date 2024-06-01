@@ -1,6 +1,10 @@
 
 .nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 439px;
+  }
 }
 
 
@@ -89,6 +93,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;

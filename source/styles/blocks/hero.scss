@@ -11,6 +11,7 @@
     min-height: 796px;
     align-items: start;
     justify-content: flex-start;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,11 +53,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 55%;
 
   @media (min-width: $tablet-width) {
     z-index: -1;
     top: 89%;
-    left: 53%;
+    left: 54%;
   }
 
   @media (min-width: $desktop-width) {

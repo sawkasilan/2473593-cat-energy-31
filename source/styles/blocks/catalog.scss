@@ -106,12 +106,11 @@
 }
 
 .catalog__title-info-link {
- text-decoration: none;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / -4;
   }
-
 }
 
 .catalog__title-info {
@@ -154,7 +153,6 @@
   @media (min-width: $desktop-width) {
     width: 169px;
   }
-
 }
 
 .catalog__button-more {
