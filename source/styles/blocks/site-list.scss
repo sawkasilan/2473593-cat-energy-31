@@ -1,5 +1,6 @@
 
 .site-list {
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -25,7 +26,6 @@
   }
 }
 
-
 .site-list__link {
   font-family: "Oswald", "Arial", sans-serif;
   color: $base-color-title;
@@ -41,6 +41,7 @@
   &:active {
     opacity: 0.6;
   }
+
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
