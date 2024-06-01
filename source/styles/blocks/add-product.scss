@@ -2,13 +2,36 @@
 .add-product {
   width: 280px;
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 299px;
+    height: 2px;
+    top: 12px;
+    background-color: #68b738;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 12px;
+      right: -30px;
+      width: $tablet-width;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      right: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
+    padding-left: 110px;
   }
 }
 
@@ -18,19 +41,24 @@
   color: $base-color-title;
   font-size: 24px;
   line-height: 24px;
-
   margin-bottom: 36px;
+  width: 226px;
+  box-shadow: 40px 0 0 0 #ffffff;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
     padding-left: 40px;
+    width: 345px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
+    width: 418px;
   }
-
 }
 
 .add-product__surprise {
@@ -43,6 +71,10 @@
   gap: 48px;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/surprise/image-surprise-mobile@1x.jpg" 1x, "../../images/surprise/image-surprise-mobile@2x.jpg" 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 
   @media (min-width: $tablet-width) {
     width: 706px;
@@ -51,6 +83,7 @@
     padding: 0 125px 0 77px;
     margin-top: 0;
     justify-content: space-between;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/surprise/image-surprise-tablet@1x.jpg" 1x, "../../images/surprise/image-surprise-tablet@2x.jpg" 2x);
   }
 
   @media (min-width: $desktop-width) {
@@ -61,8 +94,8 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/surprise/image-surprise-desktop@1x.jpg" 1x, "../../images/surprise/image-surprise-desktop@2x.jpg" 2x);
   }
-
 }
 
 .add-product__surprise-info {
@@ -80,7 +113,6 @@
   @media (min-width: $desktop-width) {
     text-align: center;
   }
-
 }
 
 .add-product__surprise-icon {
@@ -101,5 +133,4 @@
     display: flex;
     gap: 81px;
   }
-
 }

@@ -22,4 +22,10 @@
     min-height: 56px;
     margin: 0;
   }
+
+  &:hover,
+  &:active {
+    outline-offset: -2px;
+    outline: 2px solid #bababa;
+  }
 }
