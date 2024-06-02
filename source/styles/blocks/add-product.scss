@@ -9,12 +9,12 @@
     position: absolute;
     width: 299px;
     height: 2px;
-    top: 12px;
+    top: 10px;
     background-color: #68b738;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: 12px;
+      top: 15px;
       right: -30px;
       width: $tablet-width;
     }
@@ -22,6 +22,7 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       right: 0;
+      top: 19px;
     }
   }
 
@@ -51,19 +52,23 @@
     line-height: 32px;
     padding-left: 40px;
     width: 345px;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
     font-size: 40px;
     line-height: 40px;
-    width: 418px;
+    width: 416px;
+    padding-left: 0;
+    box-shadow: -40px -1px #ffffff;
   }
 }
 
 .add-product__surprise {
   background-color: rgba(104, 183, 56, 0.85);
   margin-top: 35px;
+  padding-top: 14px;
   width: 280px;
   min-height: 290px;
   display: flex;
@@ -92,6 +97,7 @@
     flex-direction: column;
     gap: 46px;
     padding: 0;
+    padding-top: 17px;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/surprise/image-surprise-desktop@1x.jpg" 1x, "../../images/surprise/image-surprise-desktop@2x.jpg" 2x);
@@ -112,6 +118,12 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  br {
+    display: block;
   }
 }
 

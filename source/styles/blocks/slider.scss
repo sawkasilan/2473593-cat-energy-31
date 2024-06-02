@@ -15,10 +15,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     background-color: transparent;
-    bottom: -36px;
+    bottom: -65px;
+    left: 770px;
     width: 560px;
     height: 512px;
-    left: 880px;
   }
 }
 
@@ -32,7 +32,7 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
-    margin-top: -156px;
+    margin-top: -149px;
   }
 }
 
@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -156px;
+    margin-top: -149px;
     height: 110%;
   }
 

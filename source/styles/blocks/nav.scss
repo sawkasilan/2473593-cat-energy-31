@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     width: 439px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
 }
 
 
@@ -36,7 +40,7 @@
     z-index: 5;
     width: 320px;
     background-color: #ffffff;
-    right: -21px;
+    right: -20px;
     top: 45px;
     height: 198px;
   }

@@ -1,3 +1,8 @@
+@media (min-width: $desktop-width) {
+  br {
+    display: none;
+  }
+}
 
 .promotions {
   position: relative;
@@ -10,7 +15,7 @@
     position: absolute;
     width: 299px;
     height: 2px;
-    top: 53px;
+    top: 50px;
     background-color: #68b738;
     z-index: -1;
 
@@ -21,7 +26,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 117px;
+      top: 114px;
       width: 1440px;
     }
   }
@@ -33,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    margin-bottom: 110px;
+    margin-bottom: 104px;
     padding-left: 110px;
   }
 }
@@ -48,22 +53,23 @@
   padding-top: 40px;
   padding-bottom: 32px;
   background-color: #ffffff;
-  box-shadow: -40px 0 0 0 #ffffff;
+  box-shadow: 40px 0 0 0 #ffffff;
 
 
   @media (min-width: $tablet-width) {
-    padding: 80px 0 66px;
-    margin-left: 70px;
+    padding: 80px 0 66px 38px;
+    margin-left: 32px;
     font-size: 32px;
     line-height: 32px;
-    width: 275px;
+    width: 240px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 96px 0 72px 40px;
     font-size: 40px;
     line-height: 40px;
-    width: 365px;
+    width: 293px;
+    margin-left: -39px;
   }
 }
 
@@ -86,7 +92,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1290px;
-    margin-left: 0;
+    margin-left: -33px;
   }
 }
 

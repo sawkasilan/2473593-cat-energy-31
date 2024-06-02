@@ -38,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 3px;
   }
 }
 
@@ -49,6 +50,11 @@
   min-height: 62px;
   gap: 24px;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+    padding-top: 13px;
+  }
 
   &::before {
     content: "";
@@ -95,6 +101,8 @@
     height: 37px;
     align-items: center;
     padding: 0;
+    margin-bottom: 2px;
+    padding-left: 7px;
   }
 }
 
@@ -145,7 +153,6 @@
   line-height: 20px;
   text-decoration: none;
   color: #444444;
-  padding-top: 7px;
 }
 
 .footer__logo-text-link:active {
