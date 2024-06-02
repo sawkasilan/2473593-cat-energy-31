@@ -121,8 +121,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  br {
+@media (min-width: $tablet-width) {
+  .br__tablet-catalog {
     display: block;
   }
 }
