@@ -23,7 +23,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    gap: 57px;
+    gap: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +43,10 @@
     width: 60px;
     top: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+  }
 }
 
 .item-more__title::before {
@@ -58,6 +62,11 @@
     width: 60px;
     margin-top: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    margin-top: 29px;
+  }
 }
 
 .item-more__text {
@@ -67,7 +76,11 @@
     line-height: 18px;
     text-align: center;
     width: 170px;
-    margin-top: 23px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
 

@@ -31,6 +31,12 @@
   }
 }
 
+@media (max-width: $only-mobile) {
+  .main-header__logo-text {
+    padding-top: 6px;
+  }
+}
+
 .main-header__logo-wrapper {
   display: flex;
   justify-content: space-between;

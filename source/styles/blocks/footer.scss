@@ -53,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 41px;
-    padding-top: 13px;
+    padding-top: 7px;
   }
 
   &::before {
@@ -120,10 +120,14 @@
   width: 28px;
   height: 22px;
   mask-image: url("../../icons/stack.svg#social-vk");
-  mask-size: 27px 17px;
+  mask-size: 28px 19px;
   mask-repeat: no-repeat;
   background-color: #666666;
   mask-position: center center;
+
+  @media (min-width: $tablet-width) {
+    mask-size: 28px 22px;
+  }
 }
 
 .footer__social-link--youtube {

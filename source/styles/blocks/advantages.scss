@@ -127,6 +127,7 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
+  justify-self: end;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
@@ -134,6 +135,7 @@
     height: 200px;
     margin-top: 17px;
     margin-left: 10px;
+    justify-self: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,39 +163,38 @@
   }
 }
 
+// .advantages__wrapper {
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   grid-template-rows: 1fr 90px;
+//   gap: 22px 11px;
+//   width: 227px;
+//   padding-top: 23px;
+//   margin-left: 20px;
+//   position: relative;
 
-.advantages__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 90px;
-  gap: 22px 11px;
-  width: 227px;
-  padding-top: 23px;
-  margin-left: 20px;
-  position: relative;
+//   &:active {
+//     opacity: 0.8;
+//   }
 
-  &:active {
-    opacity: 0.8;
-  }
+//   @media (min-width: $tablet-width) {
+//     padding-top: 77px;
+//     margin-left: 53px;
+//     min-width: 593px;
+//     min-height: 211px;
+//     grid-template-columns: 2fr 1fr;
+//     grid-template-rows: 36px 155px;
+//   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 77px;
-    margin-left: 53px;
-    min-width: 593px;
-    min-height: 211px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 36px 155px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 162px 2fr;
-    grid-template-rows: 100px 1fr;
-    min-width: 457px;
-    gap: 39px 0;
-    padding-top: 41px;
-    margin-left: 52px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     grid-template-columns: 162px 2fr;
+//     grid-template-rows: 100px 1fr;
+//     min-width: 457px;
+//     gap: 39px 0;
+//     padding-top: 41px;
+//     margin-left: 52px;
+//   }
+// }
 
 .advantages__link-wrapper {
   display: flex;
@@ -224,15 +225,15 @@
   }
 }
 
-
 .advantages__wrapper {
   display: grid;
   grid-template-columns: 60px 2fr;
   grid-template-rows: 1fr 90px;
-  row-gap: 22px;
+  gap: 22px 11px;
   width: 227px;
   padding-top: 23px;
   margin-left: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;

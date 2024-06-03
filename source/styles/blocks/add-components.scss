@@ -46,6 +46,10 @@
 .add-components__price {
   text-align: right;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     justify-self: start;
   }
