@@ -38,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-top: 3px;
   }
 }
 
@@ -48,6 +49,12 @@
   align-items: center;
   min-height: 62px;
   gap: 24px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 41px;
+    padding-top: 7px;
+  }
 
   &::before {
     content: "";
@@ -55,6 +62,7 @@
     width: 280px;
     border-top: 1px solid #d9d9d9;
     top: 83px;
+    padding: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -67,10 +75,15 @@
 .footer__logo-htmlacademy {
   width: 280px;
   min-height: 34px;
-  margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 14px;
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &:active {
     opacity: 0.6;
@@ -91,10 +104,14 @@
     width: 168px;
     height: 37px;
     align-items: center;
+    padding: 0;
+    margin-bottom: 2px;
+    padding-left: 7px;
   }
 }
 
-.footer__social-link:hover {
+.footer__social-link:hover,
+.footer__social-link:focus-visible {
   background-color: #68b738;
 }
 
@@ -108,10 +125,14 @@
   width: 28px;
   height: 22px;
   mask-image: url("../../icons/stack.svg#social-vk");
-  mask-size: 27px 17px;
+  mask-size: 28px 19px;
   mask-repeat: no-repeat;
   background-color: #666666;
   mask-position: center center;
+
+  @media (min-width: $tablet-width) {
+    mask-size: 28px 22px;
+  }
 }
 
 .footer__social-link--youtube {
@@ -143,10 +164,6 @@
   color: #444444;
 }
 
-.footer__logo-text-link:active {
-  background-color: rgba(68, 68, 68, 0.3);
-}
-
 .footer__logo-icon-link {
   mask-image: url("../../icons/stack.svg#logo-htmlacademy");
   display: block;
@@ -156,10 +173,22 @@
   background-color: #666666;
 }
 
-.footer__logo-icon-link:hover {
+.footer__logo-htmlacademy:hover .footer__logo-icon-link {
   background-color: #68b738;
 }
 
-.footer__logo-icon-link:active {
+.footer__logo-icon-link:focus-visible {
+  background-color: #68b738;
+}
+
+.footer__logo-text:focus-visible {
+  outline: none;
+}
+
+.footer__logo-htmlacademy:active .footer__logo-icon-link {
   background-color: rgba(104, 183, 56, 0.3);
+}
+
+.footer__logo-htmlacademy:active .footer__logo-text {
+  opacity: 0.8;
 }

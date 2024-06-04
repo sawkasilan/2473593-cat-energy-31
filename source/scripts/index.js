@@ -2,9 +2,11 @@
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector ('.nav__toggle');
 const mainHeader = document.querySelector ('.main-header');
+const mapNojs = document.querySelector ('.address__map-nojs');
 
 mainHeader.classList.remove('main-header--nojs');
 nav.classList.remove('nav--nojs');
+mapNojs.classList.remove('address__map-nojs');
 
 navToggle.addEventListener('click', () => {
   if (nav.classList.contains('nav--close')) {

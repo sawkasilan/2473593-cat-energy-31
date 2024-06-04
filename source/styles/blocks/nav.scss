@@ -1,6 +1,14 @@
 
 .nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 439px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
 }
 
 
@@ -15,6 +23,7 @@
     background-color: #000000;
   }
 }
+
 
 @media (max-width: 767px) {
   .nav--close .nav__toggle {
@@ -32,7 +41,7 @@
     z-index: 5;
     width: 320px;
     background-color: #ffffff;
-    right: -21px;
+    right: -20px;
     top: 45px;
     height: 198px;
   }
@@ -89,6 +98,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     display: none;

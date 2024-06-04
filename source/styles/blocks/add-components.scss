@@ -23,6 +23,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     align-self: center;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -32,18 +34,24 @@
 
   @media (min-width: $tablet-width) {
     justify-self: end;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    align-self: center;
+    place-self: center normal;
   }
 }
 
 .add-components__price {
   text-align: right;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 2px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-right: 40px;
+    justify-self: start;
   }
 }
 
@@ -52,27 +60,40 @@
   grid-template-columns: 1fr 1fr;
   gap: 13px;
   width: 280px;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   padding-top: 13px;
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 26px 38px 28px;
-    grid-template-columns: 3fr 2fr 1fr;
+    padding: 26px 38px 24px;
+    grid-template-columns: 3fr 2fr 95px;
     gap: 25px 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     width: 894px;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 15px 0 17px;
+    grid-template-columns: 325px 245px 1fr 1fr;
+    padding: 15px 0 14px;
   }
 }
 
 .add-components__item:last-child {
-  padding-bottom: 25px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 14px;
+  }
 }
 
 .add-components__button {

@@ -20,12 +20,20 @@
 
   @media (min-width: $tablet-width) {
     width: 704px;
-    height: 100px;
+    height: 87px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     height: 169px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: $only-mobile) {
+  .main-header__logo-text {
+    padding-top: 6px;
   }
 }
 
@@ -46,7 +54,7 @@
 
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 174px;
     height: 50px;
   }

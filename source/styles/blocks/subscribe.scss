@@ -12,15 +12,22 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    width: 376px;
+    width: 377px;
     min-height: 56px;
     margin: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 496px;
     min-height: 56px;
     margin: 0;
+    margin-left: -110px;
+  }
+
+  &:hover,
+  &:active {
+    outline-offset: -2px;
+    outline: 2px solid #bababa;
   }
 
   &:hover,
