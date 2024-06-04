@@ -85,6 +85,10 @@
     opacity: 0.6;
   }
 
+  &:active {
+    opacity: 0.6;
+  }
+
   &::before {
     content: "";
     position: absolute;

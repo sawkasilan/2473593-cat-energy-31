@@ -49,6 +49,19 @@
   }
 }
 
+.item-more__title::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
 .item-more__title::before {
   content: "";
   width: 30px;
