@@ -80,7 +80,7 @@
 
 
 @media (min-width: $desktop-width) {
-  .nav__background-desktop::before {
+  .nav--background-desktop::before {
     content: "";
     position: absolute;
     width: 720px;
