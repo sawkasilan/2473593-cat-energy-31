@@ -7,6 +7,15 @@
   position: relative;
 }
 
+.address__map-container {
+  margin: 0 auto;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
 .address__map {
   width: 320px;
   height: 362px;

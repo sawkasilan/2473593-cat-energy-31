@@ -53,6 +53,7 @@
 
 .example__text {
   padding-left: 20px;
+  width: 306px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -180,8 +181,8 @@
 @media (min-width: $tablet-width) {
   .example__text-tablet-wrapper {
     display: flex;
-    height: 77px;
-    margin-bottom: 250px;
+    min-height: 77px;
+    margin-bottom: 157px;
     justify-content: space-between;
   }
 }
@@ -189,15 +190,8 @@
 @media (min-width: $desktop-width) {
   .example__text-tablet-wrapper {
     display: flex;
-    height: 77px;
-    margin-bottom: 267px;
+    min-height: 77px;
     flex-direction: column;
+    margin: 0;
   }
 }
-
-@media (min-width: $tablet-width) {
-  br {
-    display: none;
-  }
-}
-
