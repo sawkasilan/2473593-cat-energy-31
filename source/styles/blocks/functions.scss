@@ -1,3 +1,4 @@
+
 .functions__br {
   display: none;
 }
@@ -72,6 +73,8 @@
     align-items: start;
     justify-content: center;
     counter-increment: number;
+	/* stylelint-disable-next-line @stylistic/indentation */
+	  gap: 31px;
 
     &::before {
       content: counter(number);
